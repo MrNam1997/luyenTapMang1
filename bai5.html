@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết chương trình đếm số nguyên âm trong một chuỗi
+    function cout() {
+        let enterNumber = prompt("Enter the number, separated by commas:");
+        let convertArr= enterNumber.split(",");
+        console.log(convertArr);
+        let dem =0;
+        for (let i = 0; i< convertArr.length; i++){
+            if (convertArr[i] < 0){
+                dem++;
+            }
+        }
+        if (dem > 0){
+            alert("co " + dem + " so am trong mang" )
+        } else {
+            alert("khong co so am nao trong mang");
+        }
+    }
+    cout();
+</script>
+
+</body>
+</html>

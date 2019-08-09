@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--in ra max va average cac phan tu trong mang trong mang-->
+<script>
+    function findMaxAverage() {
+        let arr = [-1, 11, 3124, 6435, 1312, -11, 4124];
+        let max = arr[0];
+        let sum = 0;
+        let average = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (max < arr[i]) {
+                max = arr[i];
+                sum += arr[i];
+                average = sum / arr.length;
+            }
+        }
+        alert("Max la : " + max + " average arr " + average.toFixed(2));
+    }
+
+    findMaxAverage();
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- tim max trong mang va in ra vi tri cua max-->
+<script>
+    function findMax() {
+        let arr = [-1, 2, 4, 11, 11111, 412, 24, -100];
+        let max = arr[0];
+        let dem = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (max < arr[i]) {
+                max = arr[i];
+                dem ++;
+            }
+        } alert(" Max la :" + max + " o vi tri thu " + dem + " cua mang");
+    }
+
+    findMax();
+</script>
+</body>
+</html>

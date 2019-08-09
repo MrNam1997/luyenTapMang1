@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkV(numberV) {
+        let arr = [1, 2, 4, 6];
+        // let check = false;
+        let count;
+        for (let i = 0; i < arr.length; i++) {
+            if (numberV == arr[i]) {
+                count = i;
+                break;
+            }
+        }
+        for (let j = count; j < arr.length; j++) {
+            arr[j] = arr[j + 1];
+        }
+        arr[arr.length - 1] = 0;
+        alert(arr);
+    }
+
+    let enterNumberV = Number(prompt("Enter the number V:"));
+    checkV(enterNumberV);
+</script>
+</body>
+</html>
